@@ -11,35 +11,35 @@ import robocode.BulletHitEvent;
  * 
  */
 
-public class MiRobot extends Robot {
+public class LuzArancibia extends Robot {
 
 	public void run() {
 
 		while (true) {
 
 			// Desplaza el robot 100 pixels hacia adelante
-			ahead(100);
+			ahead(125);
 
 			// Gira el cañon hacia la derecha 90 grados
-			turnGunRight(90);
+			turnGunRight(180);
 
 			// Dispara con la maxima potencia
 			fire(Rules.MAX_BULLET_POWER);
 
 			// Desplaza el robot 100 pixels hacia adelante
-			ahead(100);
+			ahead(125);
 
 			// Gira el cañon hacia la derecha 180 grados
-			turnGunLeft(90);
+			turnGunLeft(180);
 
 			// Dispara con la maxima potencia
 			fire(Rules.MAX_BULLET_POWER);
 
 			// Gira hacia la izquierda 90 grados
-			turnLeft(90);
+			turnLeft(180);
 
 			// Gira el radar hacia la izquierda 15 grados
-			turnRadarLeft(15);
+			turnRadarLeft(125);
 			
 			// Escanear otros robots
 			scan();
